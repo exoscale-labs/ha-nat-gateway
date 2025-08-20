@@ -1,7 +1,7 @@
-# ha-nat-gateway
+# HA NAT Gateay
 Exoscale NAT Gateway with VRRP (Terraform)
 
-This Terraform project provisions a highly available NAT Gatewa using two Ubuntu 22.04 instances with:
+This Terraform project provisions a highly available NAT Gateway using two Ubuntu 22.04 instances with:
  * Private network
  * IP forwarding & NAT (iptables)
  * High Availability using VRRP (keepalived)
