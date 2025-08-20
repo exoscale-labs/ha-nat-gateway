@@ -60,7 +60,7 @@ resource "exoscale_compute_instance" "gateway-node1" {
   security_group_ids = [exoscale_security_group.maintenance.id]
   type        = "standard.small"
   disk_size   = 10
-  ssh_key = "<YOUR-SSH-KEY>"
+  ssh_keys    = ["<YOUR-KEY>","<YOUR-OTHER-KEY>"]
   network_interface {
     network_id = exoscale_private_network.natgateway-network.id
   }
@@ -126,7 +126,7 @@ resource "exoscale_compute_instance" "gateway-node2" {
   security_group_ids = [exoscale_security_group.maintenance.id]
   type        = "standard.small"
   disk_size   = 10
-  ssh_key = "<YOUR-SSH-KEY>"
+  ssh_keys    = ["<YOUR-KEY>","<YOUR-OTHER-KEY>"]
   network_interface {
     network_id = exoscale_private_network.natgateway-network.id
   }
